@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "sql": {
+        "host": "127.0.0.1",
+        "username": "root",
+        "password": "root",
+        "database": "auto",
+        "charset": "UTF8MB4",
+        "type": "mysql",
+        "port": "3306",
+        "prefix": ""
+    },
+    "explain": {
+        "used": true,
+        "details": "this is for josn test"
+    }
+}
