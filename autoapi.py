@@ -19,3 +19,48 @@
 	#		"default": 0,
 	#		"childList": []
 	### 获取读取route文件的路径 添加controller/model/validate/middleware的根目录  分析route文件得到url controller文件名
+file = open("./route.php", "rb")
+urllsit=[]
+path=""
+rule=[]
+zhushi=""
+while True:
+  lines = file.readline().decode('utf-8')
+  if 'Route::' in lines:
+    if 'group' in lines:
+     zhushi=""
+     x = lines.split(",", 1)
+     x = x[0].split("(", 1)
+     x= x[1][1:-1]
+     urllsit.append(x)
+    else:
+      x = lines.split(",", 1)
+      temp=x[0].split("::",1)
+      path=x[1].split(")",1)
+      path=path[0][1:-1]
+      temp=temp[1].split("(",1)
+      contorller=temp[1][1:-1]
+      urltemp={}
+      urltemp['RequestType']=temp[0]
+      urltemp['url']='/'.join(urllsit)+"/"+contorller
+      urltemp['path']=path
+      urltemp['name']=zhushi
+      rule.append(urltemp)
+  elif "})" in lines:
+    zhushi=""
+    urllsit.pop()
+  elif "//" in lines:
+    x = lines.split("//", 1)
+    zhushi=x[1]
+  else:
+    zhushi=""
+  if not lines:
+    break
+#读取完toute文件获得结构为[{REquestType:post,url:api/tian/long,path:admin/tian,name:tian},{REquestType:post,url:api/tian/long,path:admin/tian,name:""}]列表
+#遍历route字典 保存到数据库的rule权限表中
+for ruleitem in rule:
+  #数据库操作没有写(先完善数据库的添加操作)
+  ### 1.先查询要插入的表 获得表的数据结构 
+  ### 2.遍历获得的表结构与要保存的表结构进行处理 组成最终添加的结构
+  ### 3.将最终结果保存到数据库
+  
