@@ -1,3 +1,4 @@
+#coding=UTF-8
 #只支持php5以上
 #apiName 名称
 #apiURI 网址
@@ -24,6 +25,10 @@ urllsit=[]
 path=""
 rule=[]
 zhushi=""
+name=""
+isshow=0
+menu=""
+menulist={}
 while True:
   lines = file.readline().decode('utf-8')
   if 'Route::' in lines:
@@ -44,23 +49,33 @@ while True:
       urltemp['RequestType']=temp[0]
       urltemp['url']='/'.join(urllsit)+"/"+contorller
       urltemp['path']=path
-      urltemp['name']=zhushi
+      urltemp['name']=name
+      urltemp['menu']=menu
+      urltemp['isshow']=isshow
       rule.append(urltemp)
+      name=""
+      isshow=0
+      menu=""
   elif "})" in lines:
-    zhushi=""
     urllsit.pop()
-  elif "//" in lines:
-    x = lines.split("//", 1)
-    zhushi=x[1]
-  else:
-    zhushi=""
+  elif "@name" in lines:
+    x = lines.split("@name", 1)
+    name=x[1]
+  elif "@menu" in lines:
+    x = lines.split("@menu", 1)
+    menu=x[1]
+  elif "@isshow" in lines:
+    x = lines.split("@isshow", 1)
+    isshow=x[1]
   if not lines:
     break
+print(rule)
+exit()
 #读取完toute文件获得结构为[{REquestType:post,url:api/tian/long,path:admin/tian,name:tian},{REquestType:post,url:api/tian/long,path:admin/tian,name:""}]列表
 #遍历route字典 保存到数据库的rule权限表中
 for ruleitem in rule:
+    pass
   #数据库操作没有写(先完善数据库的添加操作)
   ### 1.先查询要插入的表 获得表的数据结构 
   ### 2.遍历获得的表结构与要保存的表结构进行处理 组成最终添加的结构
   ### 3.将最终结果保存到数据库
-  
