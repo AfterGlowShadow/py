@@ -101,10 +101,10 @@ for ruleitem in rule:
   if ruleitem['menu'].strip():
     prule=menulist[ruleitem['menu']]
   # print(prule)
-  sql="INSERT INTO `lj_rule` (`title` , `prule` , `url`,`is_show`) VALUES ('{}', '{}' , '{}','{}')".format(ruleitem['name'],prule,ruleitem['url'],ruleitem['isshow'])
+  #sql="INSERT INTO `lj_rule` (`title` , `prule` , `url`,`is_show`) VALUES ('{}', '{}' , '{}','{}')".format(ruleitem['name'],prule,ruleitem['url'],ruleitem['isshow'])
   # sql="INSERT INTO `lj_rule` (`title` , `prule` , `url`,`is_show`) VALUES ('"+ruleitem['name']+"' , "+prule+" , '"+ruleitem['url']+"',"+ruleitem['isshow']+")"
   SqlAction=BaseSql.BaseSql()
-  res=SqlAction.InsertData(sql)
+  res=SqlAction.InsertData('lj_rule',ruleitem)
   if ruleitem['type']=="menu":
     menulist[ruleitem['menu']]=str(res)
   #数据库操作没有写(先完善数据库的添加操作)
