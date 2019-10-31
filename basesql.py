@@ -6,10 +6,10 @@ class BaseSql:
     sqlconfig={}
     def __init__(self):
         # 连接database
-        sqlconfig=BaseSql.output()
+        sqlconfig=self.output()
         self.conn = pymysql.connect(sqlconfig['host'],sqlconfig['username'],sqlconfig['password'],sqlconfig['database'])
         self.cursor = self.conn.cursor()
-    def output():
+    def output(self):
         file = open("./test_data.json", "rb")
         fileJson = json.load(file)
         return fileJson['sql']
@@ -32,7 +32,10 @@ class BaseSql:
     def UpdateData(self,sql):
         return Execute(sql)
     def InsertData(self,sql):
-        return Execute(sql)
+        self.cursor.execute(sql)
+        cursor = self.conn.insert_id()
+        self.conn.commit()
+        return cursor
     def Select(self,sql):
        return BaseSql.Execute(self,sql)
     def SqlBack(self,dataname,data):

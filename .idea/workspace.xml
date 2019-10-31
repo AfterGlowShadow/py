@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d6059e-049a-4bc4-b57b-608455fc7ee6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ljhs/application/admin/controller/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/ljhs/application/admin/controller/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruletool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basesql.py" beforeDir="false" afterPath="$PROJECT_DIR$/basesql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_data.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,13 +19,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/ljhs/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ljhs" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SjQcBW06kWMZczYoYjNINSpxfg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,6 +57,10 @@
       <option name="presentableId" value="Default" />
       <updated>1572074601027</updated>
       <workItem from="1572074602158" duration="15000000" />
+      <workItem from="1572353139294" duration="120000" />
+      <workItem from="1572354497433" duration="1807000" />
+      <workItem from="1572488337898" duration="2049000" />
+      <workItem from="1572502401933" duration="2000000" />
     </task>
     <servers />
   </component>
@@ -58,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,10 +1,10 @@
 {
     "version": "1.0",
     "sql": {
-        "host": "127.0.0.1",
+        "host": "192.168.1.130",
         "username": "root",
         "password": "root",
-        "database": "auto",
+        "database": "lajihuishou",
         "charset": "UTF8MB4",
         "type": "mysql",
         "port": "3306",
