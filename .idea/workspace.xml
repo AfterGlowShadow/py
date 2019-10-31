@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d6059e-049a-4bc4-b57b-608455fc7ee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ruletool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basesql.py" beforeDir="false" afterPath="$PROJECT_DIR$/basesql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruletool.py" beforeDir="false" afterPath="$PROJECT_DIR$/ruletool.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +52,16 @@
       <workItem from="1572354497433" duration="1807000" />
       <workItem from="1572488337898" duration="2049000" />
       <workItem from="1572502401933" duration="2000000" />
+      <workItem from="1572522968450" duration="292000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1572523018720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572523018720</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,5 +79,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
 </project>
