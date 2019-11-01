@@ -26,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,7 +57,9 @@
       <workItem from="1572502401933" duration="2000000" />
       <workItem from="1572522968450" duration="364000" />
       <workItem from="1572523354242" duration="196000" />
-      <workItem from="1572525452342" duration="2486000" />
+      <workItem from="1572525452342" duration="2728000" />
+      <workItem from="1572601427958" duration="447000" />
+      <workItem from="1572601903146" duration="2708000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1572523018720</created>
@@ -73,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572523277782</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first">
+      <created>1572528184255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572528184255</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -46,9 +46,9 @@ class BaseSql:
         tableinfo=self.Execute(findselect)
         insertdata={}
         for k,v in enumerate(tableinfo):
-            if v[0] in tableinfo:
+            if v[0] in data:
                 print ("tioan")
-                insertdata[v[0]]=tableinfo[v[0]]
+                insertdata[v[0]]=data[v[0]]
             else:
                 insertdata[v[0]]=""
         print(tableinfo)

@@ -51,9 +51,9 @@ while True:
       urltemp['RequestType']=temp[0]
       urltemp['url']='/'.join(urllsit)+"/"+contorller
       urltemp['path']=path
-      urltemp['name']=name
+      urltemp['title']=name
       urltemp['menu']=menu
-      urltemp['isshow']=isshow
+      urltemp['is_show']=isshow
       urltemp['type']=type
       rule.append(urltemp)
       name=""
@@ -83,9 +83,9 @@ while True:
     urltemp['RequestType'] = temp[0]
     urltemp['url'] = ''
     urltemp['path'] = path
-    urltemp['name'] = name
+    urltemp['title'] = name
     urltemp['menu'] = menu
-    urltemp['isshow'] = isshow
+    urltemp['is_show'] = isshow
     urltemp['type'] = type
     rule.append(urltemp)
     name = ""
